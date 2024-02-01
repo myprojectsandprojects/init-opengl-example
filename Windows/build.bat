@@ -1,0 +1,1 @@
+mingw32-g++ -pedantic -Wall -Wextra -Wno-unused -static -static-libgcc -static-libstdc++ main.cpp -lGdi32 -lOpengl32

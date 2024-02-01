@@ -1,0 +1,57 @@
+
+rendering text in software
+	stb_truetype.h
+	Linux
+		XLib / XCB
+	Windows
+
+using opengl without glfw
+
+opengl32.lib
+gl/gl.h
+
+BeginPaint() EndPaint() PatBlt()
+
+WM_SIZE, WM_DESTROY, WM_CLOSE PostQuitMessage(), WM_ACTIVATEAPP, WM_PAINT
+DestroyWindow()
+
+GetClientRect()
+StretchDIBits() SRCCOPY
+CreateDIBSection()
+
+---
+
+GetDC()
+ReleaseDC()
+wglCreateContext()
+wglMakeCurrent()
+
+PIXELFORMATDESCRIPTOR
+ChoosePixelFormat()
+DescribePixelFormat()
+SetPixelFormat()
+
+glViewport()
+glClearColor()
+glClear()
+SwapBuffers()
+
+---
+
+wglGetProcAddress("wglSwapIntervalEXT")
+
+
+TO SHARE A FOLDER ON UBUNTU:
+
+install some Samba stuff
+[folder] -> right click -> "Local Network Share"
+> smbpasswd -a [username] -> type in the password
+
+
+TO ACCESS ON WINDOWS 7:
+
+Windows Explorer should find a computer and a network share automatically
+
+cmd:
+	> net use Z: \\<computer name?>\<share name>
+	> Z:
